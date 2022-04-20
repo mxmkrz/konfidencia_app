@@ -46,7 +46,7 @@ public class AddUserActivity extends AppCompatActivity {
         phoneNumber = findViewById(R.id.phoneNumber);
         firstName = findViewById(R.id.firstName);
         secondName = findViewById(R.id.secondName);
-        middleName = findViewById(R.id.middleName);
+//        middleName = findViewById(R.id.middleName);
         button = findViewById(R.id.login);
 
 
@@ -56,7 +56,7 @@ public class AddUserActivity extends AppCompatActivity {
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
         awesomeValidation.addValidation(this,R.id.firstName, RegexTemplate.NOT_EMPTY,R.string.invalid_firstName);
         awesomeValidation.addValidation(this,R.id.secondName, RegexTemplate.NOT_EMPTY,R.string.invalid_secondName);
-        awesomeValidation.addValidation(this,R.id.middleName, RegexTemplate.NOT_EMPTY,R.string.invalid_middleName);
+//        awesomeValidation.addValidation(this,R.id.middleName, RegexTemplate.NOT_EMPTY,R.string.invalid_middleName);
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -76,11 +76,11 @@ public class AddUserActivity extends AppCompatActivity {
 
         String firstNameResult = firstName.getText().toString();
         String secondNameResult = secondName.getText().toString();
-        String middleNameResult = middleName.getText().toString();
+//        String middleNameResult = middleName.getText().toString();
 
         ParametersForPost parameters = new ParametersForPost();
         parameters.setFirst_name(firstNameResult);
-        parameters.setMiddle_name(middleNameResult);
+//        parameters.setMiddle_name(middleNameResult);
         parameters.setLast_name(secondNameResult);
         parameters.setMobile(mobile);
 
@@ -109,7 +109,7 @@ public class AddUserActivity extends AppCompatActivity {
                     System.out.println(response.body());
                     Intent intent = new Intent(AddUserActivity.this, PersonalAccountActivity.class);
                     intent.putExtra("first_name", firstNameResult);
-                    intent.putExtra("middle_name", middleNameResult);
+                    intent.putExtra("middle_name", "");
                     intent.putExtra("last_name", secondNameResult);
                     intent.putExtra("mobile", mobile);
                     startActivity(intent);

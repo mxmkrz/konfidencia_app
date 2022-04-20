@@ -46,22 +46,22 @@
         app:layout_constraintVertical_bias="0.354"
         tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/middleName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Отчество"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:backgroundTint="#d7b46a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
-        tools:ignore="TextFields" />
+<!--    <EditText-->
+<!--        android:id="@+id/middleName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Отчество"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:backgroundTint="#d7b46a"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.481"-->
+<!--        tools:ignore="TextFields" />-->
 
     <Button
         android:id="@+id/login"
